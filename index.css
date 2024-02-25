@@ -136,11 +136,11 @@ body{
   height: 40px;
   width: 100%;
   display: flex;
-  border-bottom: solid;
+  position: sticky;
   border-width: 1px;
   outline: 1px;
   box-shadow: 8px 2px 12px 2px;
-  position: sticky;
+  
   justify-content: space-around;
   align-items: center;
   color: #404950;
@@ -159,6 +159,7 @@ body{
   color: #404950;
   font-size: 20px;
   overflow: visible;
+  
 }
 #info-div{
   margin-top: 50px;
@@ -167,12 +168,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: fit-content;
-  overflow: hidden;
+ 
+ 
 }
 
 #info-div #in-info-div{
-   height: 200px;
+   min-height: 100px;
    width: 80%;
    border-radius: 40px;
    border: solid;
@@ -180,6 +181,7 @@ body{
    border-width:2px;
    border-color: #404950c9;
    overflow:hidden;
+   
    }
 #content-info{
 
