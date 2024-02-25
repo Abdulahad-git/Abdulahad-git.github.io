@@ -159,6 +159,7 @@ body{
   align-items: center;
   justify-content: center;
   padding: 20px;
+  overflow: hidden;
 }
 
 #info-div #in-info-div{
@@ -169,8 +170,8 @@ body{
    padding: 10px;
    border-width:2px;
    border-color: #404950c9;
-   overflow: scroll;
-}
+   overflow:hidden;
+   }
 #content-info{
   margin: 20px;
   color: #1a1b1d9b;
