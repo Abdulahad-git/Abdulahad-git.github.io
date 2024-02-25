@@ -169,6 +169,7 @@ body{
    padding: 10px;
    border-width:2px;
    border-color: #404950c9;
+   overflow: scroll;
 }
 #content-info{
   margin: 20px;
