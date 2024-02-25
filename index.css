@@ -1,13 +1,14 @@
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #8e9eab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    /* fallback for old browsers */
   background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: 0px;
   padding: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height: 100%;
   color: #2d2f30;
-  position:static;
-  
+
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -133,6 +134,7 @@ body{
   padding: 10px;
   background-color: #e0e0e02a;
   height: 40px;
+  width: 100%;
   display: flex;
   border-bottom: solid;
   border-width: 1px;
@@ -161,10 +163,11 @@ body{
 #info-div{
   margin-top: 50px;
   height: 250px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  max-height: fit-content;
   overflow: hidden;
 }
 
@@ -173,13 +176,13 @@ body{
    width: 80%;
    border-radius: 40px;
    border: solid;
-   padding: 10px;
+   padding: 20px;
    border-width:2px;
    border-color: #404950c9;
    overflow:hidden;
    }
 #content-info{
-  margin: 20px;
+
   color: #1a1b1d9b;
   line-height: 2;
 }
@@ -207,4 +210,5 @@ body{
 }
 #under-const span{
   margin-left: 20px;
+  color: #000000;
 }
