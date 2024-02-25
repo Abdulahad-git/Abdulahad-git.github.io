@@ -6,6 +6,8 @@ body{
   margin: 0px;
   padding: 0px;
   color: #2d2f30;
+  position:static;
+  
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;
