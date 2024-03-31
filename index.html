@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdul ahad | Portfolio</title>
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/fb60abb5e0.js" crossorigin="anonymous"></script>
   <script>
     if(screen.width<400){
       alert("Please Switch To Desktop Site For Better Experience")
@@ -13,9 +14,21 @@
 </head>
 <body>
 
-  <nav class="nav-bar">
 
-    <div class="logo">Abdul ahad</div>
+  <div class="side-nav-none" id="sidenav">
+    <div class="nav-main">
+      <div class="exit-div" onclick="closeNav()"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></div>
+      <div class="info-div">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Github</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+
+    <div class="logo"><i class="fa-solid fa-code" style="margin-right:7px;"></i>Abdul ahad</div>
     <div class="li-div">
      
        <a href="#">Home</a> 
@@ -26,9 +39,18 @@
 
     </div>
 
-    <div class="more-div">More</div>
+    <div class="more-div" onclick="openNav()"><i class="fa-solid fa-bars fa-xl"></i></div>
 
-  </nav>
+  </div>
 
+  <div class="under">
+    <div style="display:flex; align-items:center;">
+    <i class="fa-solid fa-screwdriver-wrench fa-2xl"></i>
+    <span style="margin: 10px;">Under construction</span>
+  </div>
+  </div>
+
+  
+<script src="script.js"></script>
 </body>
 </html>
