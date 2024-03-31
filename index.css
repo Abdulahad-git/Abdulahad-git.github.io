@@ -10,6 +10,7 @@
 }
 body{
   background: #0f100f;
+  overflow-x: hidden;
 }
 
 .nav-bar{
@@ -26,10 +27,10 @@ body{
 }
 
 .li-div{
-  width: 50%;
+  min-width: 40%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: small;
   color: aliceblue;
   
@@ -99,6 +100,8 @@ transition: width 1s;
   flex-direction: column;
   color: aliceblue;
 }
+
+
 .side-nav-none{
   display:none;
   position: absolute;
@@ -109,11 +112,99 @@ transition: width 1s;
 .info-div a{
   text-decoration: none;
   color: aliceblue;
-  margin: 10px;
+  margin: 5vh;
 }
 
 .info-div a:hover{
   color: rgb(190, 190, 190);
+}
+.para-div{
+
+   width: 100vw;
+   min-height: 20vh;
+   padding: 50px;
+   /* background-color: aliceblue; */
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   animation-name: intro;
+   animation-duration: 2s;
+   margin-bottom: 20px;
+}
+.para-inn-div{
+font-size: 40px;
+font-weight: 600;
+width:80%;
+min-height: 80%;
+color: aliceblue;
+}
+
+.para-inn-div2{
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  width:80%;
+  margin-top:20px;
+  min-height: 80%;
+  color: aliceblue;
+  }
+
+  .para-inn-div3{
+    font-size: 15px;
+    font-weight: 600;
+    width:80%;
+    margin-top:20px;
+    min-height: 80%;
+    color: aliceblue;
+    }
+
+    .hire-btn:hover{
+      background-color: rgb(236, 93, 71);
+    }
+
+.hire-btn{
+
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 7px;
+  background-color: rgb(239, 70, 44);
+  cursor: pointer;
+}
+
+.para-inn-div span{
+  color: yellowgreen;
+}
+.parainn2{
+  font-family: "Poppins";
+  width:100%;
+  font-style: italic;
+  min-height: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  color: rgb(173, 99, 230);  
+  font-weight: 500;
+  animation-name: intro;
+  animation-duration: 1s;
+  
+
+}
+
+@keyframes intro {
+
+  from{ opacity:0%;}
+  to{ opacity:100%}
+  
+}
+
+@keyframes underconstrust {
+
+  from{ transform:rotate(0deg);}
+  to{ transform:rotate(360deg);}
+  
 }
 
 .exit-div i{
@@ -127,11 +218,17 @@ transition: width 1s;
 
 .under{
   color: aliceblue;
-  margin-top: 30vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   
+}
+.under i{
+  animation: underconstrust 5s infinite;
+
+
 }
 @media only screen and (max-width: 490px) {
 
