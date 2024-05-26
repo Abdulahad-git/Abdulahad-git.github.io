@@ -280,6 +280,13 @@ body {
 .under i {
   animation: underconstrust 5s infinite;
 }
+
+@media (max-width: 1000px) {
+  .carousel-outer {
+    width: 45%;
+  }
+}
+
 @media only screen and (max-width: 490px) {
   .carousel-outer {
     width: 90%;
@@ -293,11 +300,5 @@ body {
 
   .para-div {
     padding: 50px 10px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .carousel-outer {
-    width: 45%;
   }
 }
