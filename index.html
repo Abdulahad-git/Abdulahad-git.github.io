@@ -1,64 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdul ahad | Portfolio</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://kit.fontawesome.com/fb60abb5e0.js" crossorigin="anonymous"></script>
-  <script>
-    if(screen.width<400){
-      alert("Please Switch To Desktop Site For Better Experience")
-    }
-  </script>
-</head>
-<body>
-
-
-  <div class="side-nav-none" id="sidenav">
-    <div class="nav-main">
-      <div class="exit-div" onclick="closeNav()"><i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i></div>
-      <div class="info-div">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul ahad | Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fb60abb5e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if (screen.width < 400) {
+        alert("Please Switch To Desktop Site For Better Experience");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="side-nav-none" id="sidenav">
+      <div class="nav-main">
+        <div class="exit-div" onclick="closeNav()">
+          <i class="fa-solid fa-arrow-right-from-bracket fa-xl"></i>
+        </div>
+        <div class="info-div">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="https://github.com/Abdulahad-git">Github</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="logo">
+        <i class="fa-solid fa-code" style="margin-right: 7px"></i
+        ><a href="#" style="text-decoration: none; color: aliceblue"
+          >Abdul ahad</a
+        >
+      </div>
+      <div class="li-div">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-        <a href="#">Github</a>
+        <a href="https://github.com/Abdulahad-git">Github</a>
+      </div>
+
+      <div class="more-div" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-xl"></i>
       </div>
     </div>
-  </div>
-  <div class="nav-bar">
 
-    <div class="logo"><i class="fa-solid fa-code" style="margin-right:7px;"></i>Abdul ahad</div>
-    <div class="li-div">
-     
-       <a href="#">Home</a> 
-        <a href="#">About</a> 
-        <a href="#">Contact</a> 
-        <a href="#">Github</a>
-       
-
+    <div class="para-div">
+      <div class="para-inn-div">
+        Hi, I am <span>Abdul ahad</span> and I am a Software Developer
+      </div>
+      <div class="para-inn-div2">
+        This is My Portfolio keep scrolling to Explore about me...
+      </div>
+      <div class="para-inn-div3">
+        <div class="hire-btn">
+          <a
+            style="text-decoration: none; color: aliceblue"
+            href="https://www.linkedin.com/in/abdul-ahad-004b2a279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >Hire me</a
+          >
+        </div>
+      </div>
     </div>
 
-    <div class="more-div" onclick="openNav()"><i class="fa-solid fa-bars fa-xl"></i></div>
+    <p
+      style="
+        text-align: center;
+        color: yellowgreen;
+        font-weight: 200;
+        font-size: 30px;
+      "
+    >
+      What Skills I have
+    </p>
 
-  </div>
+    <div style="display: flex; justify-content: center">
+      <div class="carousel-div">
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="white"
+              viewBox="0 -960 960 960"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"
+              />
+            </svg>
+            Programming
+          </p>
+          <p class="skill-desc">
+            " From elegant animations to robust web applications, I bring your
+            vision to life with precision and expertise. Let's create something
+            extraordinary together."
+          </p>
+        </div>
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="M480-200q66 0 113-47t47-113v-160q0-66-47-113t-113-47q-66 0-113 47t-47 113v160q0 66 47 113t113 47Zm-80-120h160v-80H400v80Zm0-160h160v-80H400v80Zm80 40Zm0 320q-65 0-120.5-32T272-240H160v-80h84q-3-20-3.5-40t-.5-40h-80v-80h80q0-20 .5-40t3.5-40h-84v-80h112q14-23 31.5-43t40.5-35l-64-66 56-56 86 86q28-9 57-9t57 9l88-86 56 56-66 66q23 15 41.5 34.5T688-640h112v80h-84q3 20 3.5 40t.5 40h80v80h-80q0 20-.5 40t-3.5 40h84v80H688q-32 56-87.5 88T480-120Z"
+              />
+            </svg>
+            Proble solving
+          </p>
+          <p class="skill-desc">
+            "With JavaScript prowess, I innovate by overcoming obstacles with
+            finesse. Let's forge paths to digital success by navigating
+            challenges together."
+          </p>
+        </div>
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="M280-240q-17 0-28.5-11.5T240-280v-80h520v-360h80q17 0 28.5 11.5T880-680v600L720-240H280ZM80-280v-560q0-17 11.5-28.5T120-880h520q17 0 28.5 11.5T680-840v360q0 17-11.5 28.5T640-440H240L80-280Zm520-240v-280H160v280h440Zm-440 0v-280 280Z"
+              />
+            </svg>
+            Communication
+          </p>
+          <p class="skill-desc">
+            "With clear communication, I bridge understanding and empower
+            collaboration. Let's achieve excellence together by connecting ideas
+            and teams."
+          </p>
+        </div>
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="m352-522 86-87-56-57-44 44-56-56 43-44-45-45-87 87 159 158Zm328 329 87-87-45-45-44 43-56-56 43-44-57-56-86 86 158 159Zm24-567 57 57-57-57ZM290-120H120v-170l175-175L80-680l200-200 216 216 151-152q12-12 27-18t31-6q16 0 31 6t27 18l53 54q12 12 18 27t6 31q0 16-6 30.5T816-647L665-495l215 215L680-80 465-295 290-120Zm-90-80h56l392-391-57-57-391 392v56Zm420-419-29-29 57 57-28-28Z"
+              />
+            </svg>
+            Phototshop
+          </p>
+          <p class="skill-desc">
+            "With Photoshop mastery, I bring imaginations to life, crafting
+            captivating visual stories. Let's turn pixels into breathtaking
+            visions with precision and creativity."
+          </p>
+        </div>
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"
+              />
+            </svg>
+            Frontend
+          </p>
+          <p class="skill-desc">
+            "Utilizing
+            <span style="color: rgb(136, 177, 52); font-weight: 600"
+              >React.js</span
+            >, I craft captivating frontends that engage and delight users.
+            Let's turn your vision into a dynamic reality."
+          </p>
+        </div>
+        <div class="carousel-outer">
+          <p class="skill-name">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="M300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720Zm0 400q-25 0-42.5 17.5T240-260q0 25 17.5 42.5T300-200q25 0 42.5-17.5T360-260q0-25-17.5-42.5T300-320ZM160-840h640q17 0 28.5 11.5T840-800v280q0 17-11.5 28.5T800-480H160q-17 0-28.5-11.5T120-520v-280q0-17 11.5-28.5T160-840Zm40 80v200h560v-200H200Zm-40 320h640q17 0 28.5 11.5T840-400v280q0 17-11.5 28.5T800-80H160q-17 0-28.5-11.5T120-120v-280q0-17 11.5-28.5T160-440Zm40 80v200h560v-200H200Zm0-400v200-200Zm0 400v200-200Z"
+              />
+            </svg>
+            Backend
+          </p>
+          <p class="skill-desc">
+            "Empowering platforms with
+            <span style="color: rgb(136, 177, 52); font-weight: 600"
+              >Node.js</span
+            >
+            backend expertise, I engineer scalable solutions for seamless
+            digital experiences."
+          </p>
+        </div>
+      </div>
+    </div>
 
-  <div class="para-div">
+    <div class="under">
+      <div style="display: flex; align-items: center">
+        <i class="fa-solid fa-screwdriver-wrench fa-2xl"></i>
+        <span style="margin: 10px">Under construction</span>
+      </div>
+    </div>
 
-    <div class="para-inn-div">
-      Hi, I am <span>Abdul ahad</span> and I am a Software Developer   </div>
-      <div class="para-inn-div2">This is My Portfolio keep scrolling to Explore about me...</div>
-      <div class="para-inn-div3"><div class="hire-btn">Hire me</div></div>
-  </div>
-  <div style="width: 100%; display: flex; align-items: center; color: yellowgreen; justify-content: space-around; font-weight: 600; font-size:20px;"><div>Goals</div></div>
-  <div class="under">
-    <div style="display:flex; align-items:center;">
-    <i class="fa-solid fa-screwdriver-wrench fa-2xl"></i>
-    <span style="margin: 10px;">Under construction</span>
-  </div>
-  </div>
-
-  
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
